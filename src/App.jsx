@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import ReactPlayer from "react-player/file";
+import VideoCard from "./VideoCard";
 
 import linkedIn from "/icon-linked-in.png";
 import introPhoto from "/brett-photo.jpg";
@@ -273,18 +274,12 @@ function App() {
         </div>
 
         <div className="video">
-          <div className="thumb" onClick={() => setOpenModal("qbal")}>
-            <img
-              className="play-overlay"
-              src={playButtonOverlay}
-              alt="play design systems video"
-            />
-            <img src={thumbSystems} alt="design systems motion" />
-          </div>
-          <button onClick={() => setOpenModal("qbal")}>
-            Watch video{" "}
-            <span style={{ fontWeight: 400, fontSize: ".85em" }}>(1 min)</span>
-          </button>
+          <VideoCard
+            onClick={() => setOpenModal("qbal")}
+            thumbSrc={thumbSystems}
+            alt="motion design systems"
+            duration="1 min"
+          />
         </div>
       </div>
 
