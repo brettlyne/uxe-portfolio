@@ -7,6 +7,7 @@ import ReactPlayer from "react-player/file";
 
 import VideoCard from "./VideoCard";
 import RollingWaves from "./RollingWaves";
+import TimestampLink from "./TimestampLink";
 
 import linkedIn from "/icon-linked-in.png";
 import introPhoto from "/brett-photo.jpg";
@@ -170,19 +171,31 @@ function App() {
             <li>
               At Roku I was responsible for our prototyping component library,
               including creating components, architecture, CI/CD, and code
-              reviews. [0:00]
+              reviews.
+              <TimestampLink
+                onClick={() => setOpenModal("prototyping")}
+                time="0:00"
+              />
             </li>
             <li>
               I prototyped many product and marketing experiences at Intuit for
               desktop and mobile devices. This prototype shows an accounting
               experiment that consolidates all accounting data by default, then
-              allows for advanced filtering and searching. [0:36]
+              allows for advanced filtering and searching.
+              <TimestampLink
+                onClick={() => setOpenModal("prototyping")}
+                time="0:37"
+              />
             </li>
             <li>
               Some of our more experimental marketing experiences enhanced
               storytelling with motion. For this one I created animation in
               After Effects, exported to Lottie, then animated based on scroll
-              position. [1:06]
+              position.
+              <TimestampLink
+                onClick={() => setOpenModal("prototyping")}
+                time="1:07"
+              />
             </li>
           </ul>
         </div>
@@ -209,13 +222,19 @@ function App() {
           <ul>
             <li>
               Magpie is a Roku Figma plugin that lets designers search for
-              artwork and metadata and insert it into design mocks.{" "}
-              <span style={{ color: "#dd6237", fontSize: ".9em" }}>[0:00]</span>
+              artwork and metadata and insert it into design mocks.
+              <TimestampLink
+                onClick={() => setOpenModal("tools")}
+                time="0:00"
+              />
             </li>
             <li>
               Hummingbird is a tool that let's designers create their own
-              shaders and launch them on Roku device.{" "}
-              <span style={{ color: "#dd6237", fontSize: ".9em" }}>[0:38]</span>
+              shaders and launch them on Roku device.
+              <TimestampLink
+                onClick={() => setOpenModal("tools")}
+                time="0:38"
+              />
             </li>
             <li>
               <a
@@ -226,8 +245,11 @@ function App() {
                 Priority Matrix
               </a>{" "}
               is a FigJam collaborative prioritization widget with over 60,000
-              users.{" "}
-              <span style={{ color: "#dd6237", fontSize: ".9em" }}>[1:54]</span>
+              users.
+              <TimestampLink
+                onClick={() => setOpenModal("tools")}
+                time="1:54"
+              />
             </li>
             <li>
               <a
@@ -238,8 +260,11 @@ function App() {
                 Chroma Palettes
               </a>{" "}
               is an open-source plugin to generate beautiful and accessible
-              palettes for data visualization.{" "}
-              <span style={{ color: "#dd6237", fontSize: ".9em" }}>[2:46]</span>
+              palettes for data visualization.
+              <TimestampLink
+                time="2:46"
+                onClick={() => setOpenModal("tools")}
+              />
             </li>
           </ul>
         </div>
@@ -320,6 +345,7 @@ function App() {
       <Modal open={openModal !== ""} onClose={() => setOpenModal("")} center>
         <div className="player-wrapper">
           <ReactPlayer
+            id="react-player"
             className="react-player"
             width="100%"
             height="100%"

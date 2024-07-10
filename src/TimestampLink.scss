@@ -1,0 +1,11 @@
+.timestamp-link {
+  color: #dd6237;
+  font-size: 0.9em;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0 6px;
+  &:hover {
+    color: #a33d17;
+  }
+}
