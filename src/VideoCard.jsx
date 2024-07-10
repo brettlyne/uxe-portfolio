@@ -41,8 +41,8 @@ const VideoCard = ({ onClick, thumbSrc, alt, duration, className = "" }) => {
     >
       <img className="thumb" src={thumbSrc} />
       <img className="play-overlay" src={playButtonOverlay} />
-      <div className="duration-shadow">{`(${duration})`}</div>
-      <div className="duration">{`(${duration})`}</div>
+      <div className="duration-shadow">{`${duration}`}</div>
+      <div className="duration">{`${duration}`}</div>
     </motion.div>
   );
 };

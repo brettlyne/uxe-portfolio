@@ -23,17 +23,17 @@
   .duration-shadow {
     position: absolute;
     top: 50%;
-    right: 10%;
+    left: calc(50% + 130px);
     transform: translate(-50%, -50%) translateZ(80px) scale(0.75);
-    background: #eeeae2;
-    padding: 4px 8px;
+    background: #3d382d;
+    padding: 4px 14px;
     border-radius: 5px;
     border: 1px solid #ef8c69;
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
-    color: #563c4f;
+    color: white;
     transition: transform 0.3s;
     transform-origin: 0% 50%;
   }

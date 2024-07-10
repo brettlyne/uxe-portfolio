@@ -233,19 +233,37 @@ function App() {
           <ul>
             <li>
               Magpie is a Roku Figma plugin that lets designers search for
-              artwork and metadata and insert it into design mocks
+              artwork and metadata and insert it into design mocks.{" "}
+              <span style={{ color: "#dd6237", fontSize: ".9em" }}>[0:00]</span>
             </li>
             <li>
               Hummingbird is a tool that let's designers create their own
-              shaders and launch them on Roku device
+              shaders and launch them on Roku device.{" "}
+              <span style={{ color: "#dd6237", fontSize: ".9em" }}>[0:38]</span>
             </li>
             <li>
-              Priority Matrix is a FigJam collaborative prioritization widget
-              with over 60,000 users
+              <a
+                href="https://www.figma.com/community/widget/1024916888280193111"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Priority Matrix
+              </a>{" "}
+              is a FigJam collaborative prioritization widget with over 60,000
+              users.{" "}
+              <span style={{ color: "#dd6237", fontSize: ".9em" }}>[1:54]</span>
             </li>
             <li>
-              Chroma Palettes is an open-source plugin to generate beautiful and
-              accessible palettes for data visualization.
+              <a
+                href="https://www.figma.com/community/plugin/1353117070534651153/chroma-data-vis-color-palettes"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Chroma Palettes
+              </a>{" "}
+              is an open-source plugin to generate beautiful and accessible
+              palettes for data visualization.{" "}
+              <span style={{ color: "#dd6237", fontSize: ".9em" }}>[2:46]</span>
             </li>
           </ul>
         </div>
