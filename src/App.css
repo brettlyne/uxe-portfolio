@@ -131,13 +131,15 @@ button.react-responsive-modal-closeButton {
   animation: rotate 250s linear infinite;
   transform-origin: 800px 6020px;
 }
-#wave-1.paused,
-#wave-2.paused {
-  animation-play-state: paused;
-}
 #wave-3 {
-  /* animation: rotate 200s linear infinite; */
+  animation: rotate 200s linear infinite;
   transform-origin: center 6060px;
+}
+
+#wave-1.paused,
+#wave-2.paused,
+#wave-3.paused {
+  animation-play-state: paused;
 }
 
 .grid {
