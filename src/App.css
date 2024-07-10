@@ -236,6 +236,9 @@ li {
     max-width: 980px;
     padding: 0 20px;
   }
+  .top-section {
+    padding-top: 240px;
+  }
   .intro p,
   .intro li {
     font-size: 20px;

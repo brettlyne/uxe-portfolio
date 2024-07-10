@@ -21,7 +21,7 @@ const TimestampLink = ({ time, onClick }) => {
 };
 
 TimestampLink.propTypes = {
-  time: PropTypes.number.isRequired,
+  time: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 
