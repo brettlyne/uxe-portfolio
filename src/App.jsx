@@ -42,6 +42,10 @@ function App() {
 
   return (
     <>
+      {Object.keys(videos).map((key) => (
+        <link rel="preload" as="fetch" key={key} href={videos[key]} />
+      ))}
+
       <div className="hero">
         <div className="logo">
           <img src={brettLogo} alt="Brett Holcomb" />
