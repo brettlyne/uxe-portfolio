@@ -220,6 +220,9 @@ li {
   }
 }
 
+.content-header {
+  grid-column: 1 / span 12;
+}
 .content {
   grid-column: 1 / span 6;
 }

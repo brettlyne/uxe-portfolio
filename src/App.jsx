@@ -12,27 +12,21 @@ import linkedIn from "/icon-linked-in.png";
 import introPhoto from "/brett-photo.jpg";
 import brettLogo from "/brett-holcomb.svg";
 
-import playButtonOverlay from "/play-button-overlay.svg";
 import thumbSystems from "/thumb-systems.png";
-import thumbLemur from "/thumb-lemur.png";
 import thumbShaders from "/thumb-shaders.png";
-import thumbMoreMotion from "/thumb-more-motion.png";
+import thumbPrototyping from "/thumb-prototyping.png";
 
 import qbalVideo from "/quickbooks-animation-library.mp4";
-import lemurVideo from "/lemur-abridged.mp4";
-import shadersVideo from "/hummingbird-abridged.mp4";
-import moreMotionVideo from "/more-intuit-motion.mp4";
 import customToolsVideo from "/custom-tools-and-plugins.mp4";
+import prototypingVideo from "/prototype-and-scale-ux.mp4";
 
 import iconPlay from "/icon-play.svg";
 import iconPause from "/icon-pause.svg";
 
 const videos = {
   qbal: qbalVideo,
-  lemur: lemurVideo,
-  shaders: shadersVideo,
-  moreMotion: moreMotionVideo,
   tools: customToolsVideo,
+  prototyping: prototypingVideo,
 };
 
 function App() {
@@ -162,8 +156,109 @@ function App() {
 
       <div className="grid top-section">
         <div className="backdrop" />
+        <h2 className="content-header">Prototyping and Scaling UX</h2>
         <div className="content">
-          <h2>Design Systems + Motion</h2>
+          <p>
+            I switched from mostly designing to mostly coding when we wanted to
+            ship higher fidelity experiences for QuickBooks that better matched
+            our vision. I eventually shipped entire microsites and landing
+            pages, and contributed to the design systems at Intuit and Roku, but
+            still love to inform early design and interaction nuances by
+            building prototypes.
+          </p>
+          <ul>
+            <li>
+              At Roku I was responsible for our prototyping component library,
+              including creating components, architecture, CI/CD, and code
+              reviews. [0:00]
+            </li>
+            <li>
+              I prototyped many product and marketing experiences at Intuit for
+              desktop and mobile devices. This prototype shows an accounting
+              experiment that consolidates all accounting data by default, then
+              allows for advanced filtering and searching. [0:36]
+            </li>
+            <li>
+              Some of our more experimental marketing experiences enhanced
+              storytelling with motion. For this one I created animation in
+              After Effects, exported to Lottie, then animated based on scroll
+              position. [1:06]
+            </li>
+          </ul>
+        </div>
+
+        <div className="video">
+          <VideoCard
+            onClick={() => setOpenModal("prototyping")}
+            thumbSrc={thumbPrototyping}
+            alt="prototyping and scaling ux"
+            duration="1.5 min"
+          />
+        </div>
+      </div>
+
+      <div style={{ height: "120px" }} />
+
+      <div className="grid">
+        <h2 className="content-header">Custom Tools and Plugins</h2>
+        <div className="content">
+          <p>
+            I’ve created custom tools for Intuit and Roku, plus open-source
+            plugins for Figma.
+          </p>
+          <ul>
+            <li>
+              Magpie is a Roku Figma plugin that lets designers search for
+              artwork and metadata and insert it into design mocks.{" "}
+              <span style={{ color: "#dd6237", fontSize: ".9em" }}>[0:00]</span>
+            </li>
+            <li>
+              Hummingbird is a tool that let's designers create their own
+              shaders and launch them on Roku device.{" "}
+              <span style={{ color: "#dd6237", fontSize: ".9em" }}>[0:38]</span>
+            </li>
+            <li>
+              <a
+                href="https://www.figma.com/community/widget/1024916888280193111"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Priority Matrix
+              </a>{" "}
+              is a FigJam collaborative prioritization widget with over 60,000
+              users.{" "}
+              <span style={{ color: "#dd6237", fontSize: ".9em" }}>[1:54]</span>
+            </li>
+            <li>
+              <a
+                href="https://www.figma.com/community/plugin/1353117070534651153/chroma-data-vis-color-palettes"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Chroma Palettes
+              </a>{" "}
+              is an open-source plugin to generate beautiful and accessible
+              palettes for data visualization.{" "}
+              <span style={{ color: "#dd6237", fontSize: ".9em" }}>[2:46]</span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="video">
+          <VideoCard
+            onClick={() => setOpenModal("tools")}
+            thumbSrc={thumbShaders}
+            alt="custom tools"
+            duration="4 min"
+          />
+        </div>
+      </div>
+
+      <div style={{ height: "120px" }} />
+
+      <div className="grid">
+        <h2 className="content-header">Design Systems + Motion</h2>
+        <div className="content">
           <p>
             I worked from existing motion specs for individual components
             (created by{" "}
@@ -219,66 +314,6 @@ function App() {
           />
         </div>
       </div>
-
-      <div style={{ height: "120px" }} />
-
-      <div className="grid">
-        <div className="backdrop" />
-        <div className="content">
-          <h2>Custom Tools and Plugins</h2>
-          <p>
-            I’ve created custom tools for Intuit and Roku, plus open-source
-            plugins for Figma.
-          </p>
-          <ul>
-            <li>
-              Magpie is a Roku Figma plugin that lets designers search for
-              artwork and metadata and insert it into design mocks.{" "}
-              <span style={{ color: "#dd6237", fontSize: ".9em" }}>[0:00]</span>
-            </li>
-            <li>
-              Hummingbird is a tool that let's designers create their own
-              shaders and launch them on Roku device.{" "}
-              <span style={{ color: "#dd6237", fontSize: ".9em" }}>[0:38]</span>
-            </li>
-            <li>
-              <a
-                href="https://www.figma.com/community/widget/1024916888280193111"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Priority Matrix
-              </a>{" "}
-              is a FigJam collaborative prioritization widget with over 60,000
-              users.{" "}
-              <span style={{ color: "#dd6237", fontSize: ".9em" }}>[1:54]</span>
-            </li>
-            <li>
-              <a
-                href="https://www.figma.com/community/plugin/1353117070534651153/chroma-data-vis-color-palettes"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Chroma Palettes
-              </a>{" "}
-              is an open-source plugin to generate beautiful and accessible
-              palettes for data visualization.{" "}
-              <span style={{ color: "#dd6237", fontSize: ".9em" }}>[2:46]</span>
-            </li>
-          </ul>
-        </div>
-
-        <div className="video">
-          <VideoCard
-            onClick={() => setOpenModal("tools")}
-            thumbSrc={thumbShaders}
-            alt="custom tools"
-            duration="4 min"
-          />
-        </div>
-      </div>
-
-      <div style={{ height: "120px" }} />
 
       <div style={{ height: "180px" }} />
 
