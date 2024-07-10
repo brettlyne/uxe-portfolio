@@ -18,5 +18,6 @@ module.exports = {
       { allowConstantExport: true },
     ],
     "react/no-unknown-property": "off",
+    "react/no-unescaped-entities": "off",
   },
 };

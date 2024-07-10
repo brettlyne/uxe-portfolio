@@ -56,8 +56,7 @@
   }
   &:active {
     .play-overlay {
-      transition: none;
-      transform: translate(-50%, -50%) scale(1.06);
+      transform: translate(-50%, -50%) translateZ(80px) scale(1.2);
     }
   }
 }
