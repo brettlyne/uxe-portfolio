@@ -233,8 +233,8 @@ function App() {
               />
             </li>
             <li>
-              Hummingbird empowers designers to create their own shaders and
-              preview them on Roku devices.
+              Hummingbird empowers designers to create and share their own
+              shaders and preview them on Roku devices.
               <TimestampLink
                 onClick={() => setOpenModal("tools")}
                 time="0:38"
