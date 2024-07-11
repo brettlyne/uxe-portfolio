@@ -344,7 +344,49 @@ function App() {
         </div>
       </div>
 
-      <div style={{ height: "180px" }} />
+      <div style={{ height: "140px" }} />
+
+      <footer>
+        <div className="grid">
+          <h2>Get in touch</h2>
+          <ul>
+            <li>
+              Email:{" "}
+              <a href="mailto:brett.holcomb@gmail.com">
+                brett.holcomb@gmail.com
+              </a>
+            </li>
+            <li>
+              LinkedIn:{" "}
+              <a
+                href="https://www.linkedin.com/in/brettholcomb/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                https://www.linkedin.com/in/brettholcomb/
+              </a>
+            </li>
+            <li>
+              Résumé:{" "}
+              <a
+                href="/uxe-portfolio/Brett%20Holcomb%20-%20Resume%202024.pdf"
+                download
+              >
+                Brett Holcomb - Resume 2024.pdf
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://brett-holcomb-2.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                A few more projects
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
 
       <Modal open={openModal !== ""} onClose={() => setOpenModal("")} center>
         <div className="player-wrapper">

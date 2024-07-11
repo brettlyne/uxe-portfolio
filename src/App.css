@@ -231,6 +231,25 @@ li {
   margin-left: 40px;
 }
 
+footer {
+  background-color: #7e4b73;
+  width: 100%;
+  padding: 60px 0 100px;
+  * {
+    grid-column: 1 / span 12;
+  }
+  h2 {
+    font-size: 56px;
+    line-height: 74px;
+    color: #ffe6f1;
+  }
+  li,
+  p,
+  a {
+    color: white;
+  }
+}
+
 @media screen and (max-width: 1240px) {
   .grid {
     max-width: 980px;
