@@ -193,7 +193,7 @@ function App() {
             </li>
             <li>
               Some of our more experimental marketing experiences enhanced
-              storytelling with motion. For this one I created animation in
+              storytelling with motion. For this one I created animations in
               After Effects, exported to Lottie, then animated based on scroll
               position.
               <TimestampLink
@@ -233,8 +233,8 @@ function App() {
               />
             </li>
             <li>
-              Hummingbird is a tool that let's designers create their own
-              shaders and launch them on Roku device.
+              Hummingbird empowers designers to create their own shaders and
+              preview them on Roku devices.
               <TimestampLink
                 onClick={() => setOpenModal("tools")}
                 time="0:38"
