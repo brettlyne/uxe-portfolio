@@ -133,7 +133,7 @@ function App() {
       <div className="intro">
         <div className="grid">
           <div className="intro-content">
-            <h2>A Short Introduction</h2>
+            <h2 id="introduction">A Short Introduction</h2>
             <ul>
               <li>
                 I started my career working on UnrealEngine and I&apos;m at my
@@ -161,7 +161,9 @@ function App() {
 
       <div className="grid top-section">
         <div className="backdrop" />
-        <h2 className="content-header">Prototyping and Scaling UX</h2>
+        <h2 id="prototyping" className="content-header">
+          Prototyping and Scaling UX
+        </h2>
         <div className="content">
           <p>
             I switched from mostly designing to mostly coding when we wanted to
@@ -217,7 +219,9 @@ function App() {
       <div style={{ height: "120px" }} />
 
       <div className="grid">
-        <h2 className="content-header">Custom Tools and Plugins</h2>
+        <h2 id="custom-tools" className="content-header">
+          Custom Tools and Plugins
+        </h2>
         <div className="content">
           <p>
             I’ve created custom tools for Intuit and Roku, plus open-source
@@ -286,7 +290,9 @@ function App() {
       <div style={{ height: "120px" }} />
 
       <div className="grid">
-        <h2 className="content-header">Design Systems + Motion</h2>
+        <h2 id="design-systems" className="content-header">
+          Design Systems + Motion
+        </h2>
         <div className="content">
           <p>
             I worked from existing motion specs for individual components
