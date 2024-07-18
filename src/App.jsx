@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
@@ -33,6 +33,15 @@ const videos = {
 function App() {
   const [openModal, setOpenModal] = useState("");
   const [animPaused, setAnimPaused] = useState(false);
+
+  // fix for anchor links
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash.length > 0) {
+      window.location.hash = "";
+      window.location.hash = hash;
+    }
+  });
 
   const letters = "Design".split("");
 
